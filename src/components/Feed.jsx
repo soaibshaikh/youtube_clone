@@ -15,14 +15,14 @@ const Feed = () => {
   return (
     <Stack
     sx={{
-      flexDirection: { sx: "column" , md: "row"}
+      flexDirection: { xs: "column" , md: "row"}
     }}
     >
       {/* sidebar added in 1st box */}
       <Box
-      sx= {{ height: {sx: 'auto', md: '92vh'}, 
+      sx= {{ height: {xs: 'auto', md: '92vh'}, 
              borderRight: '1px solid #3d3d3d',
-             px: {sx: 0, md:2}
+             px: {xs: 0, md:2}
           }}
       >
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
@@ -34,7 +34,7 @@ const Feed = () => {
         </Typography>
       </Box>
 
-        <Box p={2} sx={{ height: '90vh', flex: 2  }}>
+        <Box p={2} sx={{ overflowY: "auto", height: '90vh', flex: 2  }}>
       {/* feed videos section will add in 2nd box */}
           <Typography variant='h4'fontWeight='bold' sx={{color: '#fff'}}>
             {selectedCategory} <span style={{color:'#FC1503'}}>videos</span>
