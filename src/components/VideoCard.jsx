@@ -12,17 +12,18 @@ demoChannelTitle, demoChannelUrl } from "../utils/constants"
 const VideoCard = ({video : {id: { videoId}, snippet}}) => {
 
   return (
-    <Card sx={{ width: { md : '320px', xs: '100%' },
-        boxShadow:'none',
-        borderRadius: 0
-        }}> 
+    <Card
+    sx={{ width: { xs: '100%', sm: '358px', md : '300px',  },
+    boxShadow:'none',
+    borderRadius: 0
+    }}> 
         <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
             <CardMedia
             alt={snippet?.title}  
             image={snippet?.thumbnails?.high?.url} 
             sx={{
-                width: 358,
-                height: 180
+                width: {xs: '100%' , sm:'358px', md:'320px'},
+                height: '180px'
             }}
             />
         </Link>
@@ -30,7 +31,7 @@ const VideoCard = ({video : {id: { videoId}, snippet}}) => {
         <CardContent
         sx={{
             backgroundColor: '#1e1e1e',
-            height:'106px'
+            height:'85px'
         }}
         >
             <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
@@ -55,4 +56,4 @@ const VideoCard = ({video : {id: { videoId}, snippet}}) => {
   )
 }
 
-export default VideoCard
+export default VideoCard;
