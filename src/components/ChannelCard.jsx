@@ -4,22 +4,24 @@ import { CheckCircle } from "@mui/icons-material";
 import { demoProfilePicture } from "../utils/constants";
 import { Link } from "react-router-dom";
 
-const ChannelCard = ({channelDetail, marginTop}) => {
+const ChannelCard = ({id, channelDetail, marginTop}) => {
+
   return (
     <Box
     sx={{
       boxShadow: 'none',
-      borderRadius: "20px",
+      borderRadius: "10px",
+      // border: '10px solid white',
       display:"flex",
       justifyContent:"center",
       alignItems: "center",
-      width:{xs:'356px', md:'320px'},
-      height: '326px',
+      width: { xs: '100%', sm: '358px', md : '300px'  },
+      height: '280px',
       margin:'auto',
       marginTop
     }}
     >
-      <Link to={`/channel/${channelDetail?.id?.channelId}`}>
+      <Link to={id ? `/channel/${id}` : `/channel/error`}>
         <CardContent sx={{display:"flex", flexDirection:"column", justifyContent:"center",
           textAlign:'center', color:"#fff"
         }}>
@@ -30,8 +32,9 @@ const ChannelCard = ({channelDetail, marginTop}) => {
           />
           <Typography variant="h6">
             {channelDetail?.snippet?.title}
+            {/* {`   test  ---  ${channelDetail?.id}`} */}
             <CheckCircle
-                sx={{ fontSize:14, color:'gray', ml: '5px'  }}
+                sx={{ fontSize:'14px', color:'gray', ml: '5px'  }}
             />
           </Typography>
           {channelDetail?.statistics?.subscriberCount && (

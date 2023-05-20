@@ -1,17 +1,24 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import {VideoCard,ChannelCard, Videos} from './';
+import {ChannelCard, Videos} from './';
 import { Box } from "@mui/material";
 import { fetchFromApi } from "../utils/fetchfromApi";
 
 const ChannelDetail = () => {
-  const [ChannelDetail,setchannelDetail] = useState(null);
+  const [ChannelDetail,setChannelDetail] = useState();
   const [videos, setVideos] = useState([]);
   const { id } = useParams();
-  console.log(ChannelDetail,videos);
   useEffect(()=>{
-  fetchFromApi(`channels?part=snippet&id=${id}`).then((data)=> setchannelDetail(data?.items[0]));
-  fetchFromApi(`search?channelId=${id}&part=snippet&order=date`).then((data)=> setVideos(data?.items));
+    const fetchResults = async () => {
+
+      const data = await fetchFromApi(`channels?part=snippet&id=${id}`);
+
+      const videosData = await fetchFromApi(`search?channelId=${id}&part=snippet&order=date`);
+    
+      setChannelDetail(data?.items[0]);
+      setVideos(videosData?.items);
+    }
+    fetchResults();
   },[id]);
 
   return (
@@ -24,7 +31,7 @@ const ChannelDetail = () => {
           height:'300px'
         }}
         />
-          <ChannelCard channelDetail={ChannelDetail} marginTop='-110px'/>
+          <ChannelCard id={ChannelDetail?.id} channelDetail={ChannelDetail} marginTop='-110px'/>
       </Box>
 
       <Box display='flex' p='2'>
