@@ -35,8 +35,8 @@ const ChannelDetail = () => {
       </Box>
 
       <Box display='flex' p='2'>
-        <Box sx={{mr: {sm: '100px'}}}/>
-          <Videos videos= {videos} />
+        <Box/>
+          <Videos direction={'column'} videos= {videos} />
       </Box>
     </Box>
   )
