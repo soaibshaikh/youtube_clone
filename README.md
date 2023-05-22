@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React YouTube Clone App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### YouTube Clone App (Website Url : https://ss-youtube-clone.netlify.app)
+
+The YouTube clone app is developed using React.js is a web application that replicates some of the core features and functionalities of the popular video-sharing platform, YouTube. The app provides users with the ability to browse and watch videos, search for specific content, and interact with the available video content.
+
+Key Features:
+1. **Video Playback**: Users can watch videos directly within the app's interface. The app utilizes React components to render the video player, allowing seamless playback of video content.
+
+2. **Video Search**: The app includes a search functionality that enables users to search for videos based on specific keywords or queries. The search feature utilizes APIs to fetch and display relevant videos based on user input.
+
+3. **Video Recommendations**: Users can view a list of recommended videos based on their viewing history or other criteria. The app employs algorithms or API integrations to generate personalized video recommendations.
+
+4. **Responsive Design**: The app is designed to be responsive and accessible across different devices, including desktops, tablets, and mobile devices. It leverages CSS media queries and responsive design principles to ensure optimal user experience on various screen sizes.
+
+7. **Video Metadata**: The app displays relevant video metadata, such as title, view count, like count, and channel information. This information is retrieved from APIs and presented alongside the video player.
+
+Overall, your YouTube clone app built with React.js offers users a kind of similar experience to the original YouTube platform, providing the ability to browse, search, and interact with video content. It demonstrates my skills in front-end development, React component architecture, API integration, and responsive design.
+
+Below are screenshots of App: 
+
+![yt0](https://github.com/soaibshaikh/youtube_clone/assets/47810926/90faff28-385d-45be-b86f-8da0280357b2)
+
+![yt1](https://github.com/soaibshaikh/youtube_clone/assets/47810926/f7466667-18b7-4186-aa66-4a19a70cad00)
+
+![yt2](https://github.com/soaibshaikh/youtube_clone/assets/47810926/e6dc4710-a2c9-4e7e-a679-60a9fb3bac72)
+
+![yt3](https://github.com/soaibshaikh/youtube_clone/assets/47810926/cf5bab77-355e-4f21-aa94-d1553f41e99d)
+
+![yt4](https://github.com/soaibshaikh/youtube_clone/assets/47810926/d22081ea-ae33-42f8-b849-3fb1b878787f)
+
+![ytr0](https://github.com/soaibshaikh/youtube_clone/assets/47810926/357cde64-03a5-4921-b27c-b67e981ca5fb)
+
+![ytr1](https://github.com/soaibshaikh/youtube_clone/assets/47810926/3b5d4ad0-e631-44b5-ab2a-5d738e275464)
+
+![ytr2](https://github.com/soaibshaikh/youtube_clone/assets/47810926/e017a357-f0c5-4d25-8905-6a3e5474efc6)
+
+![ytr3](https://github.com/soaibshaikh/youtube_clone/assets/47810926/822ae14a-8eba-47dc-b4ad-b56b4af9780d)
+
+
