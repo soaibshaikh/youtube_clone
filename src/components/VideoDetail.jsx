@@ -26,7 +26,7 @@ const VideoDetail = () => {
           <Box flex={1} sx={{boxShadow: '10px 10px 5px 0px rgba(250,250,250,0.82)', backgroundColor:'#0c0c0c'}}>
             <Box sx={{width: '100%', position: 'sticky', top: '86px'}}>
               <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className='react-player' controls/>
-              <Typography color='#fff' fontWeight='bold' variant="h5">
+              <Typography marginLeft={1} color='#fff' fontWeight='bold' variant="h5">
                 {title}
               </Typography>
               <Stack direction={{xs:'column', md:'row'}} justifyContent='space-between' sx={{ color:'#fff' }} py={{xs:3, md:1}} px={2}>
